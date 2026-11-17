@@ -1,0 +1,11 @@
+Use case: illustration-story
+Asset type: transparent 2D cartoon game sprite sheet for a tower-defense game
+Primary request: Create one landscape 4:3 PNG sprite sheet, exactly 4 equal columns × 3 equal rows (12 frames total), showing the same simple cartoon black knight at a uniform scale. The cells have transparent gutters, with no visible gridlines, borders, labels, lettering, or other text.
+Subject: A chunky, friendly-stylized black knight, side view with a slight 3/4 top angle, always facing right: oversized dark-gray helmet with one simple red eyeslit, simple dark plate body, large gray sword, short crimson cape, and large boots. Keep the silhouette, armor, colors, and proportions consistent in every frame.
+Style: Very simple 2D cartoon: bold thick dark outline, only 4–6 flat colors total and at most one cel-shaded shadow per color. Large readable shapes and clean silhouette. No engraving, small details, material texture, realistic rendering, metallic highlights, gradients, painterly shading, or extra props.
+Layout: Each cell contains the complete knight including sword and cape, at the same scale, with all parts fully inside its cell. Keep the feet baseline at 85% of each cell's height. Leave clear transparent gaps between neighboring frames.
+Row 1, left to right: Four distinct walking cycle poses, alternating legs and sword arm, knight facing right; make the sequence loop smoothly.
+Row 2, left to right: Four sword-attack poses: backswing, raised blade, strike, recover.
+Row 3, left to right: Four non-gory death poses: recoil from a hit, falling, dropping to a kneel/ground, lying flat on the ground with helmet still present. Do not omit or fade away the character.
+Background: Fully transparent.
+Avoid: extra characters, scenery, floor or ground, shadows outside the character, blood, dismemberment, disappearing frames, text, borders, unequal cells, cropped limbs or weapon.

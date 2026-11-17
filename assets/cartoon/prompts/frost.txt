@@ -1,0 +1,10 @@
+Use case: stylized-concept
+Asset type: animated sprite sheet for an offline fantasy tower-defense game
+Primary request: A very simple cartoon frost tower, one huge cyan diamond crystal held by three chunky dark-blue stone prongs on a plain round grey stone base. Bold clean dark outline, 4–6 flat solid colors, one cel-shaded shadow only. STRICT grid: 2 equal columns × 2 equal rows, exactly four separate cells, transparent gutters and genuine transparent background. Same tower shape, proportions, size, angle, and the footing baseline at 85% of each cell in every frame. Upper-left: idle, dim cool-blue crystal. Upper-right: charge, brighter crystal with only a few tiny ice chips close to crystal. Lower-left: release, small simple cyan starburst hugging the crystal and a short ice bolt flying to the RIGHT, fully contained within that cell. Lower-right: settle, glow fading almost back to idle. Slight overhead three-quarter game view, readable at roughly 50 pixels. Keep each complete frame centered within its own cell.
+Style/medium: clean 2D cartoon game art, friendly fantasy strategy game, thick outlines, very simple shapes
+Composition/framing: single wide 2-by-2 sprite sheet, four uniform square frames
+Lighting/mood: clear flat lighting, playful and magical
+Color palette: cyan and light blue crystal, dark blue prongs, neutral grey base, dark outlines
+Materials/textures: plain flat cartoon colors only; no texture
+Constraints: actual alpha transparency around and between every frame; same exact building design and same foot-baseline in all four frames; only crystal glow, a few chips, and short discharge bolt animate; no text, labels, border, grid lines, UI, terrain, landscape, characters, or watermark
+Avoid: photorealism, painterly style, 3D render, elaborate stone engraving, textures, gradients, small intricate highlights, extra frames, perspective drift, different building across cells, content spilling between cells, cropped or empty cells

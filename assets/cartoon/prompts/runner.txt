@@ -1,0 +1,10 @@
+Create one standalone 4:3 landscape transparent PNG animation sprite sheet for a simple 2D fantasy tower-defense game.
+
+STRICT GRID: exactly 4 equal columns by 3 equal rows, 12 separate complete full-body poses of the SAME character, no visible grid, no cell borders, no labels, no text. Leave clear transparent gutters between all poses. Every character must fit fully inside its own cell including ears, tail, limbs, and oversized paws. Keep consistent character scale and colors. Feet/ground-contact baseline at about 85% of each cell's height.
+
+Character: a cute-fierce short tawny wolf-humanoid leaper, large triangular ears and wolf head, tiny simple brown harness, oversized paws, side view with slight three-quarter top angle, facing RIGHT. Very simple bold cartoon game-art style: thick clean dark outline, only 4–6 flat solid colors, maximum one simple cel-shading area, large readable shapes, no fur texture, no realism, no painting, no gradients, no highlights, no microdetails.
+
+Row 1: four distinct right-facing running cycle poses with alternating reaching legs and paws; clear changes in stride and arm position.
+Row 2: four right-facing claw-and-bite attack poses in sequence: windup, lunge, swipe/bite, recovery.
+Row 3: four non-gory death poses in sequence: stagger from hit, beginning to fall, nearly on ground, lying flat on ground.
+All 12 poses must clearly be the same wolf character with the same tawny fur, harness, body proportions, outline, and scale. Transparent background and transparent gutters. No scenery, shadows, floor line, props, extra characters, decorative marks, or frame.

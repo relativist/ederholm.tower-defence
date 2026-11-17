@@ -1,0 +1,8 @@
+Use case: illustration-story
+Asset type: standalone game building artwork
+Primary request: A VERY SIMPLE 2D CARTOON fantasy gatehouse, a chunky toy-like castle: two fat light-gray rounded turrets with red conical roofs, one big central round wooden gate, a tiny gold crest shield, and one small red flag.
+Style/medium: Friendly bright 2D cartoon mobile tower-defense game art. Thick clean dark outline, only five broad flat colors and a single simple cel-shadow level. Chunky rounded shapes with an immediately readable silhouette at 80 pixels. No texture, no painterly shading.
+Composition/framing: Show the entire castle isolated and centered, occupying about 80% of the image width, its base at about 85% of image height. Slightly overhead three-quarter view. One single still illustration, not a sprite sheet.
+Scene/backdrop: True transparent background, no scenery.
+Constraints: Preserve the simple gatehouse silhouette and the specified few features.
+Avoid: Brick texture, tiny windows, microdetail, engravings, realistic material detail, gradients, complex shadows, extra buildings or characters, ground or scenery, text, UI, frame, watermark.

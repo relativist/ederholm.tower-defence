@@ -1,0 +1,11 @@
+Use case: illustration-story
+Asset type: Transparent 2D game sprite sheet for a tower-defense boss, landscape 4:3 canvas.
+Primary request: A very simple, bold cartoon shadow dragon boss, repeated as exactly 12 animation frames of the same character in a strict grid of 4 equal columns × 3 equal rows. Use a large dark-purple head, two thick horns, glowing pink eyes, stout purple body, huge chunky bat wings, and a curled tail. Side view with a slight elevated three-quarter angle, facing right. Keep character proportions, colors, style, and scale identical in every cell.
+Style/medium: Simple 2D cartoon; friendly fantasy game style; bold thick dark outline; exactly about five flat colors and only one cel-shading level. Clear readable silhouette.
+Composition/framing: Exactly 4 equal columns × 3 equal rows, twelve distinct full-body poses, same uniform scale. Each pose fully contained inside its own cell, with transparent gutters and no overlap. No cell borders or separators. Feet/body baseline at 85% of each cell. Transparent background.
+Lighting/mood: Flat graphic shading, playful ominous boss.
+Color palette: Dark purple, medium purple, lighter purple shade, near-black outline, glowing pink eyes, tiny violet breath effects.
+Materials/textures: Flat clean fills only, no texture.
+Text (verbatim): None.
+Constraints: Row 1: four distinct continuous flight-cycle poses facing right, wings up / halfway folded / down / returning upward. Row 2: four dark-breath attack poses: charging with head drawn back, forming a violet orb at the mouth, releasing one small violet breath puff, recovering. Keep all breath effects entirely inside that frame's cell. Row 3: four non-gory death poses: stagger, wings collapsing, falling, lying flat with wings folded and tail visible. All twelve frames show the same dragon, with no scale changes. Transparent gutters between cells; no borders, labels, text, or watermark. Canvas landscape 4:3.
+Avoid: Photorealism, 3D, scales, scale texture, detailed wing veins, intricate anatomy, extra horns, extra characters, extra props, scenery, gradients, multiple shading bands, fine details, painterly brushwork, blood, gore, severed parts, frame lines, labels, text, watermark.

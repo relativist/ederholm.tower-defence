@@ -1,0 +1,10 @@
+Create a PNG sprite sheet for a simple 2D cartoon tower-defense game, with a genuinely transparent background. Subject: one magical ground rune trap, shown from a slight overhead three-quarter view. The trap is a low, flat, dark-gray round disk with one large simple purple zigzag/diamond rune in the center, four stout metal spikes around it, and one gold outer ring. Use a bold clean dark outline, only five solid colors plus at most one cel-shaded shadow per color. Keep shapes chunky and readable at small game size; no texture, no intricate glyphs, no engravings, no metallic facets, no tiny details, no painterly rendering.
+
+Composition: EXACTLY 2 columns by 2 rows, four complete animation frames in equal cells. The same trap must have identical geometry, orientation, and scale in every cell, with its base aligned at 85% of each cell's height and clear transparent gutters around it. No cell borders, dividers, grid lines, labels, text, UI, or extra objects. Each frame fits fully inside its cell.
+
+Frame 1 top-left: idle, rune dim purple, spikes down/hidden.
+Frame 2 top-right: charging, the same rune glows bright purple.
+Frame 3 bottom-left: triggered, all four spikes spring upward and a short simple purple burst appears close to the disk, fully contained in the cell.
+Frame 4 bottom-right: settling, spikes return down and rune dims again.
+
+Maintain the simple friendly cartoon style throughout. Transparent pixels between and around frames; do not draw a background.

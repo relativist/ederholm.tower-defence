@@ -1,0 +1,15 @@
+# Local browser automation state
+.playwright-cli/
+
+# Python caches
+__pycache__/
+*.py[cod]
+
+# Generated static-site build
+/site/
+
+# QA captures and generated browser recordings
+/qa/*.png
+/qa/*.webm
+/qa/cartoon-video/
+/qa/final-preparation.json

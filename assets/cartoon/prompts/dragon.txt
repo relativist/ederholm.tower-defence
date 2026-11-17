@@ -1,0 +1,11 @@
+Use case: illustration-story
+Asset type: transparent animated game sprite sheet, one baby fire dragon enemy
+Primary request: A VERY SIMPLE cute 2D cartoon baby fire dragon, side view looking RIGHT in every cell: big round red head, tiny gold horns, small red body, two chunky orange wings, curled tail. Make a strict sprite sheet of exactly 4 equal columns by 3 equal rows, 12 complete poses of the SAME dragon with consistent identity, proportions, scale, outline, and colors. Each dragon is centered and occupies about 85% of its cell; leave transparent gutters between cells. Landscape 4:3 canvas.
+Style/medium: extremely simple flat 2D cartoon game art, five flat colors total (red, darker red, orange, gold, dark outline), thick clean dark outline, at most one simple cel-shading shape per dragon. Bold readable silhouettes, child-friendly.
+Composition/framing: orthographic side view; full dragon in every equal cell; exact regular 4x3 grid, aligned rows and columns; transparent background, transparent spaces and gutters; no grid lines or cell borders.
+Lighting/mood: flat graphic colors, cheerful fantasy.
+Color palette: consistent bright red dragon, orange wings and small orange fire puff, tiny gold horns, dark outline.
+Materials/textures: smooth solid fills only.
+Text (verbatim): none.
+Constraints: Every cell contains one complete pose, including all wings and tail fully inside that cell. Row 1 is four distinct looping flight frames, looking right: wings high, halfway down, low, returning upward. Row 2 is four fire-breath attack phases, looking right: inhale, neck/head drawing back, small orange fire puff emitted from mouth, recover; keep the puff wholly inside its cell. Row 3 is four non-gory death poses: startled, wings drooping, falling toward ground, lying flat with wings folded. Keep the complete dragon including curled tail in every cell. Preserve the same simple dragon design, scale and colors in all 12 frames.
+Avoid: photorealism, 3D, texture, scales, detailed wing bones, fine details, gradients, extra characters, scenery, ground, shadows, panel borders, frames, separators, text, labels, watermark, cropped body parts, inconsistent anatomy, mixed grid sizes.

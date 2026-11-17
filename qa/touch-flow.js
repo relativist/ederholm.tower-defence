@@ -1,0 +1,36 @@
+async (page) => {
+ const context=await page.context().browser().newContext({viewport:{width:390,height:844},deviceScaleFactor:2,isMobile:true,hasTouch:true});
+ const phone=await context.newPage(),errors=[];phone.on('pageerror',e=>errors.push(e.message));
+ await phone.goto('http://127.0.0.1:8774/index.html');
+ await phone.locator('[data-action="new-game"]').tap();
+ const point=async i=>phone.evaluate(i=>{const r=document.querySelector('canvas').getBoundingClientRect(),v=elderholm.view,p=TD.PADS[i];return{x:r.x+v.x+p.x*v.scale,y:r.y+v.y+p.y*v.scale};},i);
+ await phone.locator('.build-card[data-id="archer"]').tap();let p=await point(1);await phone.touchscreen.tap(p.x,p.y);await phone.waitForTimeout(100);
+ if(await phone.evaluate(()=>elderholm.game.towers.length)!==1)throw Error('Touch build failed');
+ const base=await phone.evaluate(()=>elderholm.view.scale);await phone.locator('#zoomBtn').tap();await phone.waitForTimeout(100);
+ if(await phone.evaluate(()=>elderholm.view.scale)<=base)throw Error('Zoom failed');
+ await phone.locator('.build-card[data-id="mortar"]').tap();p=await point(3);await phone.touchscreen.tap(p.x,p.y);await phone.waitForTimeout(100);
+ if(await phone.evaluate(()=>elderholm.game.towers.length)!==2)throw Error('Zoomed touch build failed');
+ const session=await context.newCDPSession(phone);
+ const beforePinch=await phone.evaluate(()=>elderholm.view.scale);
+ await session.send('Input.dispatchTouchEvent',{type:'touchStart',touchPoints:[{x:150,y:270,id:1},{x:240,y:270,id:2}]});
+ await session.send('Input.dispatchTouchEvent',{type:'touchMove',touchPoints:[{x:110,y:270,id:1},{x:280,y:270,id:2}]});
+ await session.send('Input.dispatchTouchEvent',{type:'touchEnd',touchPoints:[]});
+ await phone.waitForTimeout(100);
+ if(await phone.evaluate(()=>elderholm.view.scale)<=beforePinch)throw Error('Pinch zoom failed');
+ const beforeDrag=await phone.evaluate(()=>elderholm.view.x);
+ await session.send('Input.dispatchTouchEvent',{type:'touchStart',touchPoints:[{x:180,y:300,id:1}]});
+ await session.send('Input.dispatchTouchEvent',{type:'touchMove',touchPoints:[{x:240,y:330,id:1}]});
+ await session.send('Input.dispatchTouchEvent',{type:'touchEnd',touchPoints:[]});
+ await phone.waitForTimeout(100);
+ if(await phone.evaluate(()=>elderholm.view.x)===beforeDrag)throw Error('Touch pan failed');
+ if(await phone.evaluate(()=>elderholm.game.towers.length)!==2)throw Error('Dragging accidentally built a tower');
+ await phone.screenshot({path:'qa/mobile-touch-zoom.png'});
+ await phone.locator('#zoomBtn').tap();
+ await phone.locator('#waveBtn').tap();await phone.waitForTimeout(450);
+ await phone.locator('#freezeBtn').tap();p=await point(5);await phone.touchscreen.tap(p.x,p.y);await phone.waitForTimeout(100);
+ if(await phone.evaluate(()=>elderholm.game.spellCooldowns.freeze)<=0)throw Error('Touch spell failed');
+ if(await phone.evaluate(()=>document.documentElement.scrollWidth>innerWidth))throw Error('Touch viewport overflow');
+ if(errors.length)throw Error(errors.join('; '));
+ const result=await phone.evaluate(()=>({state:elderholm.state,freezeCooldown:elderholm.game.spellCooldowns.freeze,viewport:[innerWidth,innerHeight],images:Object.values(elderholm.images).filter(i=>i.naturalWidth>0).length}));
+ await context.close();return {pass:true,checks:['реальные касания','постройка с увеличением','масштабирование двумя пальцами','перетаскивание без случайной постройки','заклинание','25 встроенных изображений','без ошибок'],...result};
+}

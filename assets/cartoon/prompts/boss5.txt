@@ -1,0 +1,11 @@
+Use case: illustration-story
+Asset type: transparent 2D animated sprite sheet for a tower-defense game
+Primary request: Create exactly one simple cartoon ogre crusher boss character sprite sheet.
+Subject: The same large orange ogre in every frame: big orange head, exactly two tiny tusks, huge orange belly, one black shoulder pad, plain brown belt, oversized plain wooden club, big feet. Side view with a slight top-down 3/4 angle, facing right. Keep identical design, proportions, colors, and scale across all 12 poses.
+Style/medium: Very simple bright flat 2D cartoon, friendly fantasy game art; thick clean dark outline; only 5 broad flat colors and one simple cel-shadow level. Large readable shapes and clear silhouette. Absolutely no skin texture, armor studs, tiny details, gradients, painterly brushwork, realistic materials, or highlights.
+Composition/framing: One landscape 4:3 transparent sprite sheet arranged as exactly 4 equal columns by 3 equal rows, 12 individual full-body poses. Each pose centered within its own equal cell with generous transparent gutters; no pose or club crosses a cell boundary. Consistent uniform character scale in all cells. Feet baseline at 85% of each cell's height. No grid, no separators, no border, no frame, no text, no labels, no shadow outside character.
+Row 1, four distinct heavy walking phases that form a loop, all facing right: alternate legs and arm positions, with the club bobbing slightly.
+Row 2, four sequential club-attack poses: pull back, raise overhead, slam forward, recover. Entire club remains inside each frame.
+Row 3, four sequential non-gory death poses: stagger, knees bend, fall sideways, lie flat on the ground with club beside the body. No blood, injury detail, or dismemberment.
+Color palette: orange skin, dark outline, black shoulder pad, brown belt and wooden club, simple restrained accent colors only.
+Constraints: Exact 4 columns × 3 rows; exact 12 full poses of the same ogre. Keep the entire body and weapon inside every cell. Transparent background with genuine alpha.

@@ -1,0 +1,34 @@
+async page => {
+ const errors=[];page.on('pageerror',e=>errors.push(e.message));
+ await page.reload();await page.locator('[data-action="new-game"]').click();
+ await page.evaluate(()=>{elderholm.game.gold=10000;});
+ const pad=async i=>{const p=await page.evaluate(i=>{const r=document.querySelector('canvas').getBoundingClientRect(),v=elderholm.view,p=TD.PADS[i];return{x:r.x+v.x+p.x*v.scale,y:r.y+v.y+p.y*v.scale};},i);await page.mouse.click(p.x,p.y);};
+ await pad(0);await page.locator('#waveBtn').click();await pad(1);
+ await page.waitForFunction(()=>elderholm.game.towers.length===2);
+ await pad(1);await page.locator('[data-action="upgrade"][data-id="a"]').click();
+ await page.waitForFunction(()=>elderholm.game.towers[1].level===2);
+ await page.locator('#autoWaves').check();
+ await page.evaluate(()=>{const g=elderholm.game;g.enemies=[];g.queue=[];g.finishWave();});
+ await page.locator('[data-action="research"][data-id="storm"]').click();
+ await page.waitForFunction(()=>elderholm.game.wave===2&&elderholm.game.phase==='wave');
+ await page.evaluate(()=>{const g=elderholm.game;g.wave=30;g.research.storm=7;g.enemies=[];g.queue=[];g.finishWave();});
+ await page.waitForFunction(()=>elderholm.game.wave===31&&document.querySelector('#wave').textContent.includes('∞'));
+ if(await page.locator('#modalBackdrop').isVisible())throw Error('Auto waves opened reward modal');
+ if(await page.evaluate(()=>elderholm.game.research.storm)!==7)throw Error('Research exceeded cap');
+ await page.locator('#autoWaves').uncheck();
+ await page.evaluate(()=>{const g=elderholm.game;g.wave=2;g.enemies=[];g.queue=[];g.finishWave();});
+ await page.locator('[data-action="research"]').first().waitFor({state:'visible'});
+ await page.locator('[data-action="research"]').first().click();
+ await page.setViewportSize({width:390,height:844});
+ if(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth))throw Error('Mobile overflow');
+ await page.locator('#autoWaves').check();await page.screenshot({path:'/tmp/td-mobile-updated.png',fullPage:true});
+ const music=await page.evaluate(()=>({tracks:EMBEDDED_PLAYLIST.length,loop:document.querySelector('audio').loop,error:document.querySelector('audio').error?.code}));
+ if(music.tracks!==11||music.loop||music.error)throw Error('Invalid playlist');
+ await page.waitForFunction(()=>document.querySelector('audio').currentTime>.1);
+ const first=await page.locator('audio').getAttribute('src');
+ await page.evaluate(()=>{const a=document.querySelector('audio');a.currentTime=a.duration-.1;});
+ await page.waitForFunction(src=>document.querySelector('audio').getAttribute('src')!==src,first);
+ await page.waitForFunction(()=>document.querySelector('audio').currentTime>.1);
+ if(errors.length)throw Error(errors.join('; '));
+ return {pass:true,combatBuild:true,combatUpgrade:true,autoBonus:true,past30:true,cap7:true,disableAuto:true,mobile390:true,music,playlistAdvance:true,errors};
+}

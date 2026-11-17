@@ -1,0 +1,13 @@
+Create a clean, simple 2D cartoon sprite sheet for a fantasy tower-defense game's barracks guardhouse. Transparent background.
+
+LAYOUT: exactly 2 equal columns by 2 equal rows, four separate animation frames, no labels, no text, no borders, no grid lines. Keep a clear transparent gutter between cells. Each cell contains the entire same building at identical scale and position, with its baseline at about 85% of that cell's height. Simple overhead three-quarter view, facing slightly toward the viewer. Thick clean dark outline (about 5 px at final sprite scale), 4-6 flat colors total, at most one simple cel-shaded shadow.
+
+DESIGN: one squat, compact grey stone guardhouse with a bright red triangular roof, one large rounded wooden front door, exactly one yellow shield mounted on the front wall, and exactly one small red pennant on a short roof pole. Use broad simple shapes and a friendly readable silhouette. No stone brick texture, no engraving, no realistic detail, no extra props, no ground shadow, and no characters or creatures.
+
+ANIMATION, same building design and geometry in all cells, read left to right, top to bottom:
+1. Idle: door fully closed; pennant hangs relaxed.
+2. Preparation: same door opens just a little; pennant rises.
+3. Action: same door wide open, a small warm yellow light visible inside; pennant flaps to the right.
+4. Return: door settles almost closed; pennant falls back to its relaxed pose.
+
+Maintain identical building structure, colors, size, camera angle, and alignment across all four frames. Crisp bold outlines, flat cartoon color, very little detail.

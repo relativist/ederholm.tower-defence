@@ -1,0 +1,13 @@
+Generate one production-ready animated sprite sheet, taxonomy: illustration-story, as a NEW IMAGE.
+
+Character: a single friendly fantasy enemy raider, a simple roundheaded brown-leather footsoldier wearing an orange hood, carrying a short sword and a round shield, with oversized boots. Side view with slight 3/4 top angle, facing RIGHT. Character must be instantly readable at small game size.
+
+STYLE: extremely simple flat 2D cartoon, thick clean dark outlines, 4–6 large solid colors, at most one simple cel-shadow per form. No texture, fabric grain, engraving, tiny details, gradients, painterly brushwork, realism, or metallic highlights. Keep design cheerful and graphic.
+
+SHEET LAYOUT IS STRICT: exactly 4 equal columns × 3 equal rows, 12 distinct complete animation frames on one uniform landscape canvas. Entire background and gutters transparent. No text, labels, frame boxes, gridlines, shadows on background, or extra objects. Each frame occupies only its own cell with clear transparent separation; do not let sword, shield, limbs, or boots cross cell boundaries. Keep the same raider proportions, colors, clothing, equipment, facing direction, and apparent scale in every cell. Feet/base line at 85% of each cell height. Leave a little transparent padding around every pose. Align the feet consistently across the first two rows.
+
+ROW 1, left to right: four distinct looping walking poses facing right, alternating leg and arm positions; keep sword and shield carried consistently.
+ROW 2, left to right: four clear sword attack poses: windup, raised sword swing preparation, forward strike, recovery back to ready. Same equipment and orientation.
+ROW 3, left to right: four non-gory death poses: stagger from a hit, begin falling, fall close to the ground, lying flat on the ground. No blood, gore, or extra effects.
+
+Deliver a clean sprite atlas with straight, consistent cell alignment and easily separable frames.

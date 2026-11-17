@@ -1,0 +1,12 @@
+Use case: game-character-spritesheet
+Asset type: transparent 2D game sprite sheet for an allied tower-defense unit.
+Primary request: Create ONE simple, bright, friendly cartoon royal guard character as an animation sprite sheet, exactly 4 equal columns by 3 equal rows (12 frames total).
+Subject: The same allied royal guard in every frame, seen in side view with a slight elevated three-quarter angle, always facing RIGHT. Distinct friendly silhouette: oversized round silver helmet with a small open face slit showing a simple smiling face; simple blue-gray body armor; bold red tabard; one large gold shield; one plain short spear; oversized boots. Keep exactly the same character, palette, outfit, proportions and scale across all frames.
+Style: Very simple flat 2D cartoon for a colorful tower-defense game. Thick clean dark outline, about five large flat color areas, at most one simple cel-shading shadow per area. Large readable shapes and clear silhouette. No realism, no material textures, no metal shine, no engraving, no tiny details, no painterly brushwork.
+Composition: Entire 4-by-3 sheet is landscape 4:3, with exactly four equally sized cells across and three equally sized cells down. Each cell has a single fully visible pose centered within its own invisible cell; preserve generous transparent gutters between adjacent poses, with no overlap between cells. No drawn grid, borders, frames, dividers, labels or text. Keep every body part, entire spear, shield and boots within its cell in every pose. Feet baseline at approximately 85 percent of each cell's height. Maintain the same apparent scale in every cell.
+Animation rows, read left to right:
+Row 1, four distinct consecutive walking-cycle poses facing right, alternating legs and arms; spear and shield move naturally while remaining fully visible. First and last poses should loop naturally.
+Row 2, four distinct spear attack poses: pull back to prepare, aim, thrust forward, recover. The full spear must fit inside the cell in each pose.
+Row 3, four non-gory defeat/death poses: stunned but upright, kneeling down, falling sideways, lying flat on the ground with the gold shield beside the guard. Keep the full character visible and inside its cell.
+Background: True transparent background, transparent gutters.
+Constraints: Exactly 12 poses, exactly four columns and three rows, same guard in every frame, no extra subjects, no extra props, no text, no watermark, no background scene.

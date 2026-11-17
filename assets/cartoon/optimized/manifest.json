@@ -1,0 +1,376 @@
+{
+  "background": {
+    "source": [
+      1556,
+      1011
+    ],
+    "poster": [
+      1536,
+      1024
+    ],
+    "atlas": null,
+    "cols": null,
+    "rows": null,
+    "frames": 1,
+    "alpha": false,
+    "bytes": 89090
+  },
+  "castle": {
+    "source": [
+      1312,
+      1199
+    ],
+    "poster": [
+      320,
+      374
+    ],
+    "atlas": null,
+    "cols": null,
+    "rows": null,
+    "frames": 1,
+    "alpha": true,
+    "bytes": 20014
+  },
+  "archer": {
+    "source": [
+      1218,
+      1292
+    ],
+    "poster": [
+      320,
+      374
+    ],
+    "atlas": [
+      384,
+      448
+    ],
+    "cols": 2,
+    "rows": 2,
+    "frames": 4,
+    "alpha": true,
+    "bytes": 55076
+  },
+  "mortar": {
+    "source": [
+      1293,
+      1217
+    ],
+    "poster": [
+      320,
+      374
+    ],
+    "atlas": [
+      384,
+      448
+    ],
+    "cols": 2,
+    "rows": 2,
+    "frames": 4,
+    "alpha": true,
+    "bytes": 49082
+  },
+  "frost": {
+    "source": [
+      1774,
+      887
+    ],
+    "poster": [
+      320,
+      374
+    ],
+    "atlas": [
+      384,
+      448
+    ],
+    "cols": 2,
+    "rows": 2,
+    "frames": 4,
+    "alpha": true,
+    "bytes": 44904
+  },
+  "barracks": {
+    "source": [
+      1262,
+      1246
+    ],
+    "poster": [
+      320,
+      374
+    ],
+    "atlas": [
+      384,
+      448
+    ],
+    "cols": 2,
+    "rows": 2,
+    "frames": 4,
+    "alpha": true,
+    "bytes": 45918
+  },
+  "arcane": {
+    "source": [
+      1254,
+      1254
+    ],
+    "poster": [
+      320,
+      374
+    ],
+    "atlas": [
+      384,
+      448
+    ],
+    "cols": 2,
+    "rows": 2,
+    "frames": 4,
+    "alpha": true,
+    "bytes": 45892
+  },
+  "trap": {
+    "source": [
+      1264,
+      1244
+    ],
+    "poster": [
+      320,
+      374
+    ],
+    "atlas": [
+      384,
+      448
+    ],
+    "cols": 2,
+    "rows": 2,
+    "frames": 4,
+    "alpha": true,
+    "bytes": 45086
+  },
+  "raider": {
+    "source": [
+      1448,
+      1086
+    ],
+    "poster": [
+      320,
+      374
+    ],
+    "atlas": [
+      768,
+      672
+    ],
+    "cols": 4,
+    "rows": 3,
+    "frames": 12,
+    "alpha": true,
+    "bytes": 122920
+  },
+  "runner": {
+    "source": [
+      1448,
+      1086
+    ],
+    "poster": [
+      320,
+      374
+    ],
+    "atlas": [
+      768,
+      672
+    ],
+    "cols": 4,
+    "rows": 3,
+    "frames": 12,
+    "alpha": true,
+    "bytes": 139392
+  },
+  "knight": {
+    "source": [
+      1448,
+      1086
+    ],
+    "poster": [
+      320,
+      374
+    ],
+    "atlas": [
+      768,
+      672
+    ],
+    "cols": 4,
+    "rows": 3,
+    "frames": 12,
+    "alpha": true,
+    "bytes": 90902
+  },
+  "shaman": {
+    "source": [
+      1448,
+      1086
+    ],
+    "poster": [
+      320,
+      374
+    ],
+    "atlas": [
+      768,
+      672
+    ],
+    "cols": 4,
+    "rows": 3,
+    "frames": 12,
+    "alpha": true,
+    "bytes": 118886
+  },
+  "wraith": {
+    "source": [
+      1448,
+      1086
+    ],
+    "poster": [
+      320,
+      374
+    ],
+    "atlas": [
+      768,
+      672
+    ],
+    "cols": 4,
+    "rows": 3,
+    "frames": 12,
+    "alpha": true,
+    "bytes": 116388
+  },
+  "golem": {
+    "source": [
+      1448,
+      1086
+    ],
+    "poster": [
+      320,
+      374
+    ],
+    "atlas": [
+      768,
+      672
+    ],
+    "cols": 4,
+    "rows": 3,
+    "frames": 12,
+    "alpha": true,
+    "bytes": 108890
+  },
+  "dragon": {
+    "source": [
+      1448,
+      1086
+    ],
+    "poster": [
+      320,
+      374
+    ],
+    "atlas": [
+      768,
+      672
+    ],
+    "cols": 4,
+    "rows": 3,
+    "frames": 12,
+    "alpha": true,
+    "bytes": 108678
+  },
+  "boss5": {
+    "source": [
+      1448,
+      1086
+    ],
+    "poster": [
+      320,
+      374
+    ],
+    "atlas": [
+      768,
+      672
+    ],
+    "cols": 4,
+    "rows": 3,
+    "frames": 12,
+    "alpha": true,
+    "bytes": 136616
+  },
+  "boss10": {
+    "source": [
+      1448,
+      1086
+    ],
+    "poster": [
+      320,
+      374
+    ],
+    "atlas": [
+      768,
+      672
+    ],
+    "cols": 4,
+    "rows": 3,
+    "frames": 12,
+    "alpha": true,
+    "bytes": 146298
+  },
+  "boss15": {
+    "source": [
+      1448,
+      1086
+    ],
+    "poster": [
+      320,
+      374
+    ],
+    "atlas": [
+      768,
+      672
+    ],
+    "cols": 4,
+    "rows": 3,
+    "frames": 12,
+    "alpha": true,
+    "bytes": 114778
+  },
+  "boss20": {
+    "source": [
+      1448,
+      1086
+    ],
+    "poster": [
+      320,
+      374
+    ],
+    "atlas": [
+      768,
+      672
+    ],
+    "cols": 4,
+    "rows": 3,
+    "frames": 12,
+    "alpha": true,
+    "bytes": 115836
+  },
+  "guard": {
+    "source": [
+      1448,
+      1086
+    ],
+    "poster": [
+      320,
+      374
+    ],
+    "atlas": [
+      768,
+      672
+    ],
+    "cols": 4,
+    "rows": 3,
+    "frames": 12,
+    "alpha": true,
+    "bytes": 140146
+  }
+}

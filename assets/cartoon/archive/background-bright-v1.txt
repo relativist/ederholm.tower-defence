@@ -1,0 +1,7 @@
+Use case: game asset
+Asset type: wide 2D tower-defense battlefield background for Eldholm
+Scene/backdrop: simple fantasy forest meadow seen almost top-down, landscape composition about 1000:650. Broad flat mint-green and olive-green grass areas. Rounded chunky pine silhouettes frame only the outer edges, leaving the central 85% as a smooth, open grass clearing suitable for gameplay objects. A few large, simple rocks only along the edges. One thin, flat blue stream runs along the very bottom edge.
+Style/medium: very simple bright 2D cartoon mobile-game illustration, bold clean thick dark outlines, large rounded shapes, 5–8 flat colors, at most one simple cel-shade.
+Composition/framing: top-down, broad uncluttered central clearing, edge foliage sparse and contained to perimeter.
+Constraints: cheerful storybook fantasy look; clear readable shapes at small screen size; flat clean color fields.
+Avoid: realistic or painterly rendering, texture, grass blades, microtexture, tiny pebbles, flowers, busy details, dappled detail, road, path, buildings, towers, characters, enemies, text, UI, watermark.

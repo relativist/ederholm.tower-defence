@@ -1,0 +1,7 @@
+Create a sprite sheet for a small tower-defense game: FROST GIANT BOSS, in a very simple 2D cartoon style. The character is a big round blue-headed giant with a white blocky beard, a tiny ice crown, stout blue body, short gray fur kilt, oversized simple cyan hammer, huge feet. Thick dark outline about 5 px, flat colors and one cel-shading tone only. Avoid detail: no hair strands, no ice facets, no carved runes, no texture, no realism. Clear readable silhouette at small game-sprite size.
+
+MANDATORY SHEET LAYOUT: exactly 4 equal columns by 3 equal rows, 12 separate complete animation frames. Every cell same scale and camera, same character proportions, same colors. Transparent background. Clean transparent gutters between cells; no grid, no borders, no labels, no text. Landscape 4:3 overall sheet. Character fills about 85% of each cell height, with consistent baseline.
+
+Row 1: four distinct walk-cycle poses, alternating feet, giant looking to the RIGHT in every pose.
+Row 2: four consecutive hammer-attack poses: windup, hammer raised overhead, hammer slam, recover. Hammer remains fully within its cell in all poses.
+Row 3: four non-gory defeat/death poses: stunned, kneeling, falling backward, lying flat on the ice with hammer beside him. Same visual character throughout. No gore, no blood, no extra objects/background.
